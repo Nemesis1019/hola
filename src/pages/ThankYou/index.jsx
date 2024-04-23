@@ -12,7 +12,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { useMediaQuery } from "@mui/material"
 
-import './index.css'
+import './styles.css'
 
 
 export function Thankyou(){
