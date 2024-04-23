@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 export function NavBar(){
     return(
-        <div className="flex justify-between items-center bg-black  h-[14%]  w-full">
+        <div className="flex justify-between items-center relative  bg-black  h-[14%]  w-full">
             <div className="cursor-pointer ml-[8%]">
                 <Link to="/">
                     <img src={Group} alt="Logo.png"/>

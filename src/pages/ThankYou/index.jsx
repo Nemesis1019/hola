@@ -1,9 +1,10 @@
 import { NavBar } from '../../components/Nav_bar'
 import { Navbarmobile } from '../../components/Nav_bar_mobile'
 import icon_waze from '../../assets/icon_waze.png'
-import thankspage_bg from '../../assets/thankspage_bg.png'
+
 import jauria_mack from '../../assets/jauria_mack.png'
 import data from "../../data/data.json"
+import thankspage_bg from "../../assets/thankspage_bg.webp"
 
 import { CiLocationOn } from "react-icons/ci";
 import { FaFacebookF } from "react-icons/fa";
@@ -18,7 +19,7 @@ export function Thankyou(){
     
     return(
       <div className="relative">
-            <div className="absolute inset-0 bg-cover bg-center filtro-imagen" style={{backgroundImage: `url(${thankspage_bg})`}}></div>
+            <div className="absolute inset-0 bg-cover bg-center filtro-imagen" style={{backgroundImage: `url(${thankspage_bg})`,preload:true}}></div>
             <div className="relative z-10 bg-cover bg-center">
               <div className="flex flex-col justify-between items-center h-screen ">
                 {useMediaQuery('(min-width: 650px)')?<NavBar/>:<Navbarmobile/>}
@@ -57,7 +58,7 @@ export function Thankyou(){
                     <img src={jauria_mack} alt="jauria_mack.png"/>
                   </figure>
                 </div>
-                <div className="bg-barra_Inferior w-screen h-[8%] flex justify-end items-center gap-2  ">
+                <div className="bg-golden w-screen h-[8%] flex justify-end items-center gap-2  ">
                   <figure className="rounded-full border-2 w-[33px] h-[33px] border-white flex justify-center items-center cursor-pointer">
                     <FaFacebookF color="white" size="18px" />
                   </figure>

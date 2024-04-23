@@ -1,5 +1,5 @@
 import { NavBar } from '../../components/Nav_bar'
-import homepage_bg from '../../assets/homepage_bg.png'
+import homepage_bg from '../../assets/homepage_bg.webp'
 import years_mack from '../../assets/100years_mack.png'
 import first_winners from '../../assets/first_winners.png'
 import cap_image from '../../assets/cap_image.png'
@@ -20,11 +20,14 @@ export function Home (){
 
     return (
         
-        <div id="principal_container" className="flex flex-col">
+        <div id="principal_container" className="flex flex-col ">
             {useMediaQuery('(min-width: 650px)')?<NavBar/>:<Navbarmobile/>}
-            <div id="container_page1" >
-                <div className="w-full relative h-screen bg-cover bg-no-repeat bg-left sm:bg-cover" style={{backgroundImage: `url(${homepage_bg})`}}>
+            <div id="container_page1 h-screen" >
+            
+                <div className="w-full relative h-screen bg-cover bg-no-repeat bg-left sm:bg-cover" style={{backgroundImage: `url(${homepage_bg})`,preload:true}}>
+                
                     <div className="relative h-[20%] top-[50%] inset-0 bg-cover bg-no-repeat bg-left  bg-gradient-to-b from-transparent to-black opacity-100"></div>
+                    
                     <div className="bg-black absolute top-[69%] ">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
                             <div className="flex flex-col justify-center items-center ml-7 gap-5 text-white">
@@ -42,19 +45,19 @@ export function Home (){
                                 </p>
                             </div>
                             <figure className="w-full flex justify-center items-center">
-                                <img src={cap_image} className="w-[70%] " alt="gorra.png"/>
+                                <img src={cap_image} className="w-[50%] md:w-[70%] " alt="gorra.png"/>
                             </figure>
                         </div>
 
                         <div id="container_page2" className="bg-gray flex flex-col  gap-[60px]  w-full h-full bg-cover bg-no-repeat ">
                             <div className="w-full flex flex-col items-center gap-[5px] mt-6  ">
-                                <h1 className="font-extrabold text-[24px]  md:text-[42px]">
+                                <h1 className="font-extrabold text-[24px]  md:text-[42px] text-justify">
                                     {data.homepage.register}
                                 </h1>
-                                <h3 className="font-semibold text-[16px]" >
+                                <h3 className="font-semibold text-[16px] ml-4 mr-4 md:ml-0 md:mr-0 text-justify md:text-left" >
                                     {data.homepage.data}
                                 </h3>
-                                <h3>
+                                <h3 className="text-[16px] ml-4 mr-4 md:ml-0 md:mr-0 text-justify md:text-left">
                                     {data.homepage.person}
                                 </h3>
                             </div>
