@@ -18,7 +18,7 @@ This website was laid out based on a design from Figma. It has no functionality;
 
     cd page
 
-3.- Go to the main project folder :
+3.- Install project dependencies :
 
     npm i
 
