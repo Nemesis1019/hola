@@ -22,6 +22,10 @@ This website was laid out based on a design from Figma. It has no functionality;
 
     npm i
 
+4 . Start local server :
+
+    npm run dev
+
 
 # Demo
 At the following link, you'll find a demo of the project.
